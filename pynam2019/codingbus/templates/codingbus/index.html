@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Coding Bus/Home</title></head>
+    <body>
+        <style>
+            h1{
+                color: #01F6FE;
+                text-align:center;
+                image-rendering: 
+                background-size: cover;
+                border-radius: 10px;
+            }
+
+            div.HTML{
+                text-align: right;
+            }
+            div.Python{
+                text-align: left;
+            }
+
+            div.Buttons{
+                background-color: 
+            }
+        </style>
+
+        <h1>Coding Bus</h1>
+        <div class="box">
+            <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fak3.picdn.net%2Fshutterstock%2Fvideos%2F1023180523%2Fthumb%2F1.jpg&imgrefurl=https%3A%2F%2Fwww.shutterstock.com%2Fvideo%2Fclip-1023180523-lockdown-young-indian-programmer-beard-sitting-computer&docid=BRwqBDVeBoUdwM&tbnid=lgtdNNJboYO55M%3A&vet=10ahUKEwjr6q-UuaLkAhVBzIUKHTGjCc4QMwioASg-MD4..i&w=852&h=480&bih=920&biw=1920&q=picture%20of%20programmer%20wide&ved=0ahUKEwjr6q-UuaLkAhVBzIUKHTGjCc4QMwioASg-MD4&iact=mrc&uact=8" alt="Smiley face" height="42" width="42">
+            {% for lesson in lessons %}
+            <div class = "Buttons">
+                <a href='/codingbus/{{lesson.title}}'>{{lesson.title}}</a>
+                <div id="Python"><button onclick= alert();>Python</button></div>
+            </div>
+        </div>
+        {% endfor %}
+        
+    </body>
+</html>
